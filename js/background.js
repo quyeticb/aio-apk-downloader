@@ -1,0 +1,1 @@
+browser.tabs.onUpdated.addListener(function(e,t,s){-1!=s.url.indexOf("https://play.google.com/store/apps/details?id")&&"complete"==s.status&&browser.tabs.executeScript(e,{file:"js/popup.js"})});
